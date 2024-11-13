@@ -18,7 +18,8 @@ public class GameManager : MonoBehaviour
         Restart();
     }
 
-    private void Restart() {
+    private void Restart()
+    {
         Debug.Log("Game Restarting");
         String activeScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(activeScene);
