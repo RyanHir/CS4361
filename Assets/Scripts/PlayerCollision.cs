@@ -9,5 +9,6 @@ public class PlayerCollision : MonoBehaviour
         if (info.collider.tag != "Obstical")
             return;
         movement.enabled = false;
+        FindObjectOfType<GameManager>().EndGame();
     }
 }
