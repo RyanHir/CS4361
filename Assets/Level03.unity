@@ -955,26 +955,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 888914312738599928, guid: 3e0a4241776fa3a4e8c4d2857d84f2f1, type: 3}
-      propertyPath: rb
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 888914312738599928, guid: 3e0a4241776fa3a4e8c4d2857d84f2f1, type: 3}
-      propertyPath: jumpForce
-      value: 6.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 888914312738599928, guid: 3e0a4241776fa3a4e8c4d2857d84f2f1, type: 3}
-      propertyPath: sideForce
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 888914312738599928, guid: 3e0a4241776fa3a4e8c4d2857d84f2f1, type: 3}
-      propertyPath: forwardForce
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 888914312738599928, guid: 3e0a4241776fa3a4e8c4d2857d84f2f1, type: 3}
-      propertyPath: groundMask.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 888914312738599929, guid: 3e0a4241776fa3a4e8c4d2857d84f2f1, type: 3}
       propertyPath: m_RootOrder
       value: 1

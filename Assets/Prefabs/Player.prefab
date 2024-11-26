@@ -130,7 +130,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forwardForce: 1000
   sideForce: 100
+  jumpForce: 10
   rb: {fileID: 888914312738599933}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &888914312738599879
 MonoBehaviour:
   m_ObjectHideFlags: 0
