@@ -1,11 +1,19 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     private bool isRunning = true;
     public float restartDelay = 1f;
+    public Text levelTag;
+    public void Start()
+    {
+        int levelIndex = SceneManager.GetActiveScene().buildIndex;
+        Debug.Log($"abc {levelIndex}");
+        levelTag.text = $"Level {levelIndex}";
+    }
 
     public void EndGame()
     {
