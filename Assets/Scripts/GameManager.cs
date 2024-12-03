@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
         int levelIndex = SceneManager.GetActiveScene().buildIndex;
         Debug.Log($"abc {levelIndex}");
         levelTag.text = $"Level {levelIndex}";
+        // DontDestroyOnLoad(FindObjectOfType<AudioSource>()); 
     }
 
     public void EndGame()
