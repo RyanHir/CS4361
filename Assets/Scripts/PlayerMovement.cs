@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -41,16 +42,15 @@ public class PlayerMovement : MonoBehaviour
         bool keyLeft = Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow);
         bool keyRight = Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow);
 
-        if (keyLeft || keyRight)
+        if (keyRight)
         {
-            if (keyRight)
-            {
-                rb.AddForce(sideForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
-            }
-            else if (keyLeft)
-            {
-                rb.AddForce(-sideForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
-            }
+            rb.AddForce(sideForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        }
+        else if (keyLeft)
+        {
+            rb.AddForce(-sideForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        }else{
+            rb.AddForce(-6f*rb.velocity.x * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
         // Check if the player is out of bounds (e.g., falling off the platform)
