@@ -622,8 +622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f79377296acf34898078ab9adb19f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardForce: 2000
-  sideForce: 100
+  forwardForce: 1500
+  sideForce: 50
   jumpForce: 1000
   rb: {fileID: 8172276194334286880}
   groundMask:
