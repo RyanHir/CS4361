@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.627451, g: 0.627451, b: 0.627451, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -840,7 +840,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a3285902cc7d0f444bccefb2bb18a5e8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1749,6 +1749,10 @@ PrefabInstance:
       propertyPath: offset.z
       value: -3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4264510792482185765, guid: d8e5ee3774433b34f9ee96ad3ab04712, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4264510792482185767, guid: d8e5ee3774433b34f9ee96ad3ab04712, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -1768,7 +1772,7 @@ PrefabInstance:
       objectReference: {fileID: 830819787}
     - target: {fileID: 8172276194334286872, guid: d0105b286b57a724eaf0953d63819a4a, type: 3}
       propertyPath: m_VersionIndex
-      value: 3825
+      value: 3906
       objectReference: {fileID: 0}
     - target: {fileID: 8172276194334286873, guid: d0105b286b57a724eaf0953d63819a4a, type: 3}
       propertyPath: m_RootOrder
