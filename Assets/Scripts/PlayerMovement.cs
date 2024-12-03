@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     public LayerMask groundMask; // Layer to check if player is grounded
     private bool isGrounded;
+    private bool willJump = false;
 
     void Start()
     {
@@ -29,12 +30,18 @@ public class PlayerMovement : MonoBehaviour
         // Jumping functionality with "Space" key
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            rb.AddForce(0, jumpForce, 0, ForceMode.Impulse);
+            willJump = true;
         }
     }
 
     void FixedUpdate()
     {
+        if (willJump) {
+            willJump = false;
+            rb.AddForce(0, jumpForce * Time.deltaTime, 0, ForceMode.Impulse);
+        }
+
+
         // Applying a forward force to player object
         rb.AddForce(0, 0, forwardForce * Time.deltaTime);
 
